@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZONTIK | Export to Latin America for U.S. manufacturers</title>
+<meta name="description" content="ZONTIK helps U.S. small and mid-sized manufacturers sell in Mexico, Colombia, Chile and beyond through Latin America's leading online marketplaces: logistics, customs, registrations and marketplace operations in one service.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2213%22%20fill%3D%22%2310242F%22/%3E%3Cg%20transform%3D%22translate%2810%2C12%29%20scale%28.38%29%22%3E%3Cpath%20d%3D%22M26%2020%20H97%20L27%20100%20H87%22%20fill%3D%22none%22%20stroke%3D%22%23F4F7F6%22%20stroke-width%3D%2216%22/%3E%3Cpath%20d%3D%22M87%2083%20L117%20100%20L87%20117%20Z%22%20fill%3D%22%23F2B705%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10242F;       /* harbor ink */
+  --paper:#F4F7F6;     /* chart paper, cool */
+  --panel:#FFFFFF;
+  --muted:#4F6470;
+  --rule:#C9D5D3;
+  --signal:#F2B705;    /* maritime signal yellow */
+  --sea:#1C5D7A;       /* channel blue */
+  --on-signal:#10242F;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E6EEEC; --paper:#0F1D24; --panel:#152832; --muted:#9DB2BA;
+    --rule:#2A4350; --signal:#F2B705; --sea:#6FB3D2; --on-signal:#10242F;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E6EEEC; --paper:#0F1D24; --panel:#152832; --muted:#9DB2BA;
+  --rule:#2A4350; --signal:#F2B705; --sea:#6FB3D2; --on-signal:#10242F;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:1.0625rem;line-height:1.6;
+}
+h1,h2,h3{font-family:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600}
+p{margin:0 0 1rem}
+a{color:var(--sea)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+.measure{max-width:64ch}
+
+/* header */
+header.site{border-bottom:1px solid var(--rule)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;padding-bottom:1rem}
+.brand{display:inline-flex;text-decoration:none}
+.brand .logo{height:40px;width:auto;display:block}
+nav.site{display:flex;gap:1.4rem;flex-wrap:wrap}
+nav.site a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+nav.site a:hover{text-decoration:underline}
+@media (max-width:720px){nav.site{display:none}}
+
+.btn{display:inline-block;background:var(--signal);color:var(--on-signal);font-weight:600;text-decoration:none;padding:.8rem 1.3rem;border-radius:3px}
+.btn:hover{filter:brightness(.95)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+
+/* hero */
+.hero{padding:4.5rem 0 4rem}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:3rem;align-items:center}
+.hero p.lead{font-size:1.25rem;color:var(--muted);margin:1.4rem 0 2rem;max-width:42ch}
+.hero p.launch{border-left:4px solid var(--signal);padding:.2rem 0 .2rem .9rem;margin:-.6rem 0 1.8rem;font-weight:600;max-width:46ch}
+.hero .actions{display:flex;gap:1rem;flex-wrap:wrap}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero{padding-top:3rem}}
+
+/* the shipping label: the one memorable element */
+.label{
+  background:var(--panel);border:2px solid var(--ink);border-radius:4px;
+  font-family:"IBM Plex Sans Condensed",Arial,sans-serif;
+  transform:rotate(-1.5deg);box-shadow:8px 8px 0 var(--sea);
+}
+@media (prefers-reduced-motion:no-preference){
+  .label{animation:settle .9s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes settle{from{transform:translateY(-14px) rotate(-5deg);opacity:0}to{transform:rotate(-1.5deg);opacity:1}}
+}
+.label .row{display:grid;grid-template-columns:7.5rem 1fr;border-bottom:2px solid var(--ink)}
+.label .row:last-child{border-bottom:0}
+.label .k{padding:.75rem .9rem;font-weight:600;font-size:.9rem;border-right:2px solid var(--ink);color:var(--muted)}
+.label .v{padding:.75rem .9rem;font-weight:600;font-size:1.1rem}
+.label .big .v{font-size:1.6rem;line-height:1.15}
+.label .stripe{height:34px;margin:.9rem;background:repeating-linear-gradient(90deg,var(--ink) 0 3px,transparent 3px 5px,var(--ink) 5px 6px,transparent 6px 10px,var(--ink) 10px 14px,transparent 14px 16px)}
+.label .note{font-size:.8rem;color:var(--muted);padding:0 .9rem .8rem;font-family:"Public Sans",sans-serif}
+
+section{padding:4.5rem 0;border-top:1px solid var(--rule)}
+section h2{margin-bottom:1.2rem}
+.intro{color:var(--muted);font-size:1.15rem;max-width:60ch;margin-bottom:2.5rem}
+
+/* why now: three sourced facts, set as prose blocks with a rule, not cards */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.facts div{border-top:4px solid var(--signal);padding-top:1rem}
+.facts strong{display:block;font-family:"IBM Plex Sans Condensed",Arial,sans-serif;font-size:2rem;line-height:1.1;margin-bottom:.4rem}
+.facts p{color:var(--muted);font-size:.98rem}
+.facts small{font-size:.82rem}
+@media (max-width:820px){.facts{grid-template-columns:1fr}}
+
+/* process: a real sequence, so it is numbered and drawn as a route */
+.route{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.route::before{content:"";position:absolute;left:0;right:0;top:1.15rem;border-top:3px dashed var(--sea)}
+.route li{position:relative;padding:0 1rem 0 0}
+.route .stop{display:inline-grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--paper);border:3px solid var(--sea);font-family:"IBM Plex Sans Condensed",Arial,sans-serif;font-weight:700;position:relative;margin-bottom:1rem}
+.route li:last-child .stop{background:var(--signal);border-color:var(--signal);color:var(--on-signal)}
+.route h3{margin-bottom:.4rem}
+.route p{font-size:.96rem;color:var(--muted)}
+@media (max-width:900px){
+  .route{grid-template-columns:1fr;gap:1.6rem}
+  .route::before{left:1.15rem;right:auto;top:0;bottom:0;border-top:0;border-left:3px dashed var(--sea)}
+  .route li{padding-left:3.6rem}
+  .route .stop{position:absolute;left:0;top:0}
+}
+
+/* services: a two-column manifest list */
+.manifest{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem}
+.manifest div{padding:1.1rem 0;border-bottom:1px solid var(--rule)}
+.manifest h3{font-size:1.15rem;margin-bottom:.3rem}
+.manifest p{margin:0;color:var(--muted);font-size:.98rem}
+@media (max-width:760px){.manifest{grid-template-columns:1fr}}
+
+/* models */
+.models{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.model{background:var(--panel);border:1px solid var(--rule);padding:1.8rem;border-radius:4px}
+.model.b{border:2px solid var(--ink)}
+.model h3{font-size:1.5rem;margin-bottom:.6rem}
+.model ul{margin:.8rem 0 0;padding-left:1.2rem;color:var(--muted)}
+.model li{margin-bottom:.35rem}
+@media (max-width:760px){.models{grid-template-columns:1fr}}
+
+/* markets */
+.markets{width:100%;border-collapse:collapse}
+.markets th,.markets td{text-align:left;padding:1rem .8rem;border-bottom:1px solid var(--rule);vertical-align:top}
+.markets th{font-family:"IBM Plex Sans Condensed",Arial,sans-serif;font-weight:600;font-size:1rem;color:var(--muted)}
+.markets td:first-child{font-weight:600;white-space:nowrap}
+.markets td.c{font-family:"IBM Plex Sans Condensed",Arial,sans-serif;font-size:1.25rem;font-weight:600}
+.table-scroll{overflow-x:auto}
+.aside{margin-top:1.5rem;color:var(--muted);max-width:68ch}
+
+/* founder */
+.founder{display:grid;grid-template-columns:1fr 1.6fr;gap:3rem;align-items:start}
+.founder .cred{border-left:4px solid var(--signal);padding-left:1.2rem}
+.founder .cred p{margin:0 0 .7rem;font-weight:600}
+.founder .cred span{display:block;font-weight:400;color:var(--muted);font-size:.95rem}
+@media (max-width:820px){.founder{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-top:0}
+.contact h2{color:var(--paper)}
+.contact p{color:var(--paper);opacity:.85;max-width:56ch}
+.contact .btn.ghost{color:var(--paper);border-color:var(--paper)}
+.contact a.mail{color:var(--signal);font-weight:600}
+
+footer{padding:2rem 0;font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 124" class="logo" role="img" aria-label="ZONTIK"><g transform="translate(0,2) scale(1.0)"><path d="M26 20 H97 L27 100 H87" fill="none" style="stroke:var(--ink)" stroke-width="14" stroke-linejoin="miter"/><circle style="fill:var(--paper);stroke:var(--sea)" cx="17" cy="20" r="11" stroke-width="6"/><path d="M87 85 L113 100 L87 115 Z" style="fill:var(--signal)"/></g><path d="M196.8538681948424 94.0H153.20916905444125V82.44699140401146L180.99140401146133 41.46131805157593H154.676217765043V30.0H196.12034383954153V41.55300859598854L168.24641833810887 82.53868194842407H196.8538681948424ZM237.74785100286533 95.10028653295129Q231.97134670487105 95.10028653295129 227.2951289398281 93.31232091690543Q222.6189111747851 91.5243553008596 219.31805157593124 87.53581661891118Q216.01719197707737 83.54727793696276 214.18338108882523 77.26647564469914Q212.34957020057305 70.98567335243553 212.34957020057305 62.0Q212.34957020057305 53.014326647564474 214.18338108882523 46.73352435530086Q216.01719197707737 40.45272206303725 219.31805157593124 36.46418338108883Q222.6189111747851 32.4756446991404 227.2951289398281 30.687679083094558Q231.97134670487105 28.899713467048713 237.74785100286533 28.899713467048713Q243.5243553008596 28.899713467048713 248.20057306590257 30.687679083094558Q252.87679083094554 32.4756446991404 256.1776504297994 36.46418338108883Q259.4785100286533 40.45272206303725 261.3123209169055 46.73352435530086Q263.1461318051576 53.014326647564474 263.1461318051576 62.0Q263.1461318051576 70.98567335243553 261.3123209169055 77.26647564469914Q259.4785100286533 83.54727793696276 256.1776504297994 87.53581661891118Q252.87679083094554 91.5243553008596 248.20057306590257 93.31232091690543Q243.5243553008596 95.10028653295129 237.74785100286533 95.10028653295129ZM237.74785100286533 83.54727793696276Q243.24928366762177 83.54727793696276 246.22922636103152 80.2464183381089Q249.20916905444125 76.94555873925502 249.20916905444125 70.34383954154728V53.656160458452725Q249.20916905444125 47.05444126074499 246.22922636103152 43.75358166189112Q243.24928366762177 40.45272206303725 237.74785100286533 40.45272206303725Q232.24641833810887 40.45272206303725 229.26647564469914 43.75358166189112Q226.2865329512894 47.05444126074499 226.2865329512894 53.656160458452725V70.34383954154728Q226.2865329512894 76.94555873925502 229.26647564469914 80.2464183381089Q232.24641833810887 83.54727793696276 237.74785100286533 83.54727793696276ZM298.72206303724926 59.70773638968482 294.6876790830945 49.53008595988539H293.2206303724928L293.95415472779365 60.25787965616046V94.0H281.6676217765043V30.0H295.97134670487105L312.10888252148993 64.29226361031519L316.1432664756447 74.46991404011462H317.6103151862464L316.87679083094554 63.742120343839545V30.0H329.16332378223495V94.0H314.8595988538682ZM374.36676217765046 41.46131805157593V94.0H361.2550143266476V41.46131805157593H345.9426934097421V30.0H389.6790830945559V41.46131805157593ZM404.34957020057305 94.0V83.63896848137536H411.86819484240687V40.36103151862464H404.34957020057305V30.0H432.49856733524354V40.36103151862464H424.9799426934097V83.63896848137536H432.49856733524354V94.0ZM471.6504297994269 65.66762177650429 464.2234957020057 75.75358166189112V94.0H451.11174785100286V30.0H464.2234957020057V50.722063037249285L463.6733524355301 60.89971346704871H465.1404011461318L471.4670487106017 50.722063037249285L485.404011461318 30.0H500.2578796561604L480.9111747851003 56.68194842406877L501.90830945558736 94.0H486.50429799426934Z" style="fill:var(--ink)"/></svg></a>
+    <nav class="site" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#services">Services</a>
+      <a href="#markets">Markets</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="border-top:0">
+    <div class="wrap">
+      <div>
+        <h1>Your products, sold in Latin America.</h1>
+        <p class="lead">ZONTIK helps U.S. manufacturers and brands export to Mexico, Colombia, Chile and beyond through the region's largest online marketplaces. We handle the logistics, customs, registrations and day-to-day selling, so you don't need a team in every country.</p>
+        <p class="launch">ZONTIK is preparing to launch. We're accepting early-interest inquiries now.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Register your interest</a>
+          <a class="btn ghost" href="#how">See how it works</a>
+        </div>
+      </div>
+
+      <div class="label" role="img" aria-label="Shipping label: from your U.S. facility to buyers in Latin America, handled by ZONTIK">
+        <div class="row"><div class="k">Ship from</div><div class="v">Your facility, United States</div></div>
+        <div class="row big"><div class="k">Ship to</div><div class="v">121 million online buyers in Latin America</div></div>
+        <div class="row"><div class="k">Markets</div><div class="v">Mexico, Colombia, Chile, then Peru and Brazil</div></div>
+        <div class="row"><div class="k">Handled by</div><div class="v">ZONTIK</div></div>
+        <div class="stripe" aria-hidden="true"></div>
+        <p class="note">Buyer figure: Mercado Libre unique active buyers, 2025.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <h2>Why export now</h2>
+      <p class="intro">Latin America is one of the world's fastest-growing online markets. Very few American small businesses sell there, and sellers from outside the hemisphere are moving in quickly.</p>
+      <div class="facts">
+        <div>
+          <strong>Under 1%</strong>
+          <p>of America's 36 million small businesses export goods.</p>
+          <small><a href="https://www.census.gov/foreign-trade/Press-Release/edb/2024prelimprofile.pdf">U.S. Census Bureau</a> and <a href="https://advocacy.sba.gov/2026/02/03/advocacy-releases-frequently-asked-questions-about-small-businesses-2026/">SBA Office of Advocacy</a></small>
+        </div>
+        <div>
+          <strong>$10 billion</strong>
+          <p>estimated yearly cross-border e-commerce in Latin America, and growing fast.</p>
+          <small><a href="https://www.boardroomalpha.com/sec/meli-8-k-2026-02-24-0001099590-26-000003/meli-20260224xex991.htm">Mercado Libre, Q4 2025 shareholder letter</a></small>
+        </div>
+        <div>
+          <strong>Lower duties</strong>
+          <p>for qualifying U.S. goods in Mexico, Colombia, Chile and Peru, thanks to U.S. trade agreements.</p>
+          <small><a href="https://ustr.gov/countries-regions/americas">Office of the U.S. Trade Representative</a></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="intro">One partner from your loading dock to your customer's door. Each step is planned around your products and the market you start in.</p>
+      <ol class="route">
+        <li><span class="stop">1</span><h3>Assess</h3><p>We pick the products and the first country with the best odds, and model your landed cost and margin.</p></li>
+        <li><span class="stop">2</span><h3>Prepare</h3><p>Product registrations, labeling, localized listings in Spanish, and U.S. sourcing where it helps you qualify for lower duties.</p></li>
+        <li><span class="stop">3</span><h3>Ship</h3><p>We choose the route and mode that serve each shipment best, and handle freight and customs into marketplace warehouses.</p></li>
+        <li><span class="stop">4</span><h3>Sell</h3><p>We run your store: pricing in local currency, inventory, advertising and customer service.</p></li>
+        <li><span class="stop">5</span><h3>Grow</h3><p>Monthly reporting, then expansion to new countries and marketplaces once the first market works.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="intro">Use the full service or pick the pieces you need.</p>
+      <div class="manifest">
+        <div><h3>Export readiness assessment</h3><p>Which products and countries to start with, landed-cost model and a regulatory scan. From $1,500.</p></div>
+        <div><h3>Marketplace onboarding</h3><p>Seller accounts on Mercado Libre, Amazon Mexico, Falabella and other leading marketplaces.</p></div>
+        <div><h3>Listing localization</h3><p>Titles, descriptions and images adapted for local buyers, drafted with AI tools and reviewed by native speakers.</p></div>
+        <div><h3>Product registrations</h3><p>Filings with health and agricultural regulators where your product category requires them.</p></div>
+        <div><h3>Marketplace operations</h3><p>Pricing, inventory planning, customer service and monthly performance reports.</p></div>
+        <div><h3>Advertising</h3><p>Campaigns on Mercado Ads and Amazon advertising, managed against clear sales targets.</p></div>
+        <div><h3>Cross-border logistics</h3><p>Freight, customs clearance, fulfillment-center inbound and returns, through the route that fits each case.</p></div>
+        <div><h3>U.S. sourcing for export</h3><p>Finding U.S. manufacturers and component suppliers, so your products are made here and qualify for trade-agreement duty benefits.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="models">
+    <div class="wrap">
+      <h2>Two ways to work with us</h2>
+      <p class="intro">Choose how much control you want to keep, and how much of the work and risk you want us to carry.</p>
+      <div class="models">
+        <div class="model">
+          <h3>Managed export</h3>
+          <p>You keep ownership of your goods and your marketplace stores. We set up and run everything for you.</p>
+          <ul>
+            <li>Your brand, your accounts, your inventory</li>
+            <li>Setup fees, a monthly fee and a share of sales</li>
+            <li>Best for brands that want to build their own presence abroad</li>
+          </ul>
+        </div>
+        <div class="model b">
+          <h3>We buy, we sell</h3>
+          <p>We purchase your products in the United States and resell them in Latin America under our own accounts.</p>
+          <ul>
+            <li>You receive a U.S. purchase order, paid in dollars</li>
+            <li>No foreign registrations, currency risk or customs paperwork for you</li>
+            <li>Best for first-time exporters who want to test demand</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="markets">
+    <div class="wrap">
+      <h2>Where we sell</h2>
+      <p class="intro">We start where U.S. trade agreements give American products a price advantage, then expand as each market proves out.</p>
+      <div class="table-scroll">
+        <table class="markets">
+          <thead><tr><th scope="col">Phase</th><th scope="col">Countries</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+            <tr><td>First</td><td class="c">Mexico, Colombia, Chile</td><td>Trade agreements with the U.S. (USMCA, Colombia TPA, Chile FTA) and strong marketplace demand.</td></tr>
+            <tr><td>Next</td><td class="c">Peru, Brazil</td><td>Peru has a U.S. trade agreement. Brazil is the region's largest e-commerce market and needs more regulatory preparation.</td></tr>
+            <tr><td>Later</td><td class="c">Central America, Dominican Republic, Argentina</td><td>Expansion once the operating model is proven.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="aside">We are based in Charleston, South Carolina, but we don't force every shipment through one port. For each client we choose the port or airport, transport mode and fulfillment model that give the best cost and delivery time.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap founder">
+      <div>
+        <h2>Experience you can put to work</h2>
+        <p>ZONTIK's leadership brings more than 25 years of hands-on experience moving goods across borders and selling them online in Latin America.</p>
+        <p>That experience was built inside some of the world's leading logistics and commerce companies. Now it goes to work for each of our clients, so your first export market benefits from lessons already learned at scale.</p>
+      </div>
+      <div class="cred">
+        <p>Latin American marketplace expansion<span>Launched consumer brands across six countries on Mercado Libre, Amazon and Walmart at Merama, the region's largest e-commerce brand aggregator. Your launch plan starts from what has already worked.</span></p>
+        <p>Freight and customs<span>Built ocean and air freight operations for the Maersk Group in Colombia and four Eastern European countries. Your shipments are planned by people who have run freight operations.</span></p>
+        <p>Contract logistics<span>Designed warehousing and distribution solutions at DHL Supply Chain for brands such as Levi's. Your inventory sits where it serves buyers best.</span></p>
+        <p>Distribution real estate<span>Found and negotiated warehouse sites for adidas, Daimler and Thermo Fisher at Jones Lang LaSalle. We understand the physical side of a supply chain.</span></p>
+        <p>Selling on marketplaces as a brand owner<span>Built and ran consumer brands on Amazon and Walmart in the United States, Canada and Mexico. We have been in your position as a seller.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Find out if your products can sell in Latin America</h2>
+      <p>ZONTIK is preparing to launch. Tell us what you make and where you sell today, and we'll contact you as we begin operations with an honest view of whether exporting makes sense for you, and where to start.</p>
+      <p><a class="mail" href="mailto:info@zontik.co">info@zontik.co</a></p>
+      <a class="btn" href="mailto:info@zontik.co?subject=Early%20interest%20in%20exporting%20with%20ZONTIK">Register your interest</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 ZONTIK LLC</span>
+    <span>Charleston, South Carolina</span>
+  </div>
+</footer>
+
+</body>
+</html>
